@@ -33,6 +33,17 @@ python3 build_app.py   # builds mikan_app.html + mikan_uri.txt + prints byte cou
   keeping those raw would break the fragment/query parsing of the data URI
   (found the hard way: the first build silently truncated at a CSS `#`).
 
+## Verification (e2e_verify.py)
+
+```
+1) title: Mikan in a URL
+2) external requests: 0        (self-contained ✓)
+3) console errors: 0
+4) pixels: 783 orange px drawn (the cat renders ✓)
+5) petting: p=66 after click   (interaction works ✓)
+VERDICT: ALL PASS ✓
+```
+
 ## Byte budget
 
 ```
